@@ -1,0 +1,23 @@
+# Build outputs
+build/
+build*/
+.pio/
+
+# IDE / editor files
+.vscode/
+*.code-workspace
+
+# Temporary source fragments
+src/*.txt
+src/*.disabled
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Wokwi local/cache files
+.wokwi/
+
+# PlatformIO generated files
+.pioenvs/
+.piolibdeps/

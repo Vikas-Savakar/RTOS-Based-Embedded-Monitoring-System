@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "author": "Vikas Savakar",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 20, "left": 20, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": 20, "left": 300, "attrs": { "temperature": "25", "humidity": "50" } },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": 180, "left": 300, "attrs": {} },
+    { "type": "wokwi-led", "id": "ledGreen", "top": 300, "left": 300, "attrs": { "color": "green" } },
+    { "type": "wokwi-led", "id": "ledRed", "top": 300, "left": 400, "attrs": { "color": "red" } },
+    { "type": "wokwi-buzzer", "id": "buzzer1", "top": 400, "left": 350, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "esp:3V3", "dht1:VCC", "red" ],
+    [ "esp:GND.1", "dht1:GND", "black" ],
+    [ "esp:D4", "dht1:SDA", "green" ],
+    [ "esp:3V3", "pot1:VCC", "red" ],
+    [ "esp:GND.1", "pot1:GND", "black" ],
+    [ "esp:D34", "pot1:SIG", "green" ],
+    [ "esp:D2", "ledGreen:A", "green" ],
+    [ "ledGreen:C", "esp:GND.1", "black" ],
+    [ "esp:D15", "ledRed:A", "red" ],
+    [ "ledRed:C", "esp:GND.1", "black" ],
+    [ "esp:D27", "buzzer1:2", "purple" ],
+    [ "buzzer1:1", "esp:GND.1", "black" ]
+  ],
+  "serialMonitor": {
+    "display": "always"
+  }
+}
