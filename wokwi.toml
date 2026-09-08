@@ -1,4 +1,4 @@
-[wokwi]
+﻿[wokwi]
 version = 1
-firmware = 'build10/Embedded_RTOS_Project1.ino.bin'
-elf = 'build10/Embedded_RTOS_Project1.ino.elf'
+firmware = 'build/Embedded_RTOS_Project1.ino.bin'
+elf = 'build/Embedded_RTOS_Project1.ino.elf'
