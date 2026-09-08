@@ -1,5 +1,7 @@
 # RTOS-Based Embedded Monitoring System
 
+[![Build Firmware](https://github.com/Vikas-Savakar/RTOS-Based-Embedded-Monitoring-System/actions/workflows/build.yml/badge.svg)](https://github.com/Vikas-Savakar/RTOS-Based-Embedded-Monitoring-System/actions/workflows/build.yml)
+
 Simulation-based embedded firmware project using an ESP32, FreeRTOS tasks, a DHT22 sensor, an analog process-value input, UART monitoring, and alarm outputs.
 
 This repository is designed to be easy to understand, reproduce, and discuss in an embedded-systems placement interview.
@@ -169,6 +171,12 @@ This project can be discussed as a practical example of:
 7. What is the difference between a normal reading and an alarm condition?
 8. Why was simulation used before hardware deployment?
 
+## Demo / Verification
+
+The baseline Wokwi simulation has been run successfully with normal DHT22 values. The serial monitor reports temperature, humidity, ADC process value, and `NORMAL` status while the green status LED remains active.
+
+For placement discussions, demonstrate the alarm cases live in Wokwi rather than claiming unexecuted test cases as completed.
+
 ## Current scope and limitation
 
 This is a **simulation-based training project**. The repository demonstrates firmware behaviour and embedded design concepts using Wokwi. It should not be described as a field-tested industrial controller.
@@ -177,5 +185,6 @@ A hardware version could replace the simulated inputs/outputs with physical sens
 
 ## Author
 
-**Vikas Savakar**`r`nB.Tech Electrical and Electronics Engineering
+**Vikas Savakar**
+B.Tech Electrical and Electronics Engineering
 REVA University
