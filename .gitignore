@@ -21,3 +21,6 @@ Thumbs.db
 # PlatformIO generated files
 .pioenvs/
 .piolibdeps/
+
+# Local Arduino libraries
+libraries/
