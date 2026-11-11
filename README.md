@@ -4,6 +4,8 @@
 
 ESP32 firmware that uses FreeRTOS tasks to read a temperature/humidity sensor and an analog input, then raise alarms when values go out of range. Runs in the Wokwi simulator, no hardware needed.
 
+**[▶ Run it in your browser (Wokwi)](https://wokwi.com/projects/480422369979282433)** — no install needed. Click the green Start button.
+
 ## What it does
 
 - Reads a DHT22 (temperature, humidity) and a potentiometer (ADC) in a dedicated task
@@ -18,7 +20,7 @@ ESP32 firmware that uses FreeRTOS tasks to read a temperature/humidity sensor an
 | Outputs | Green LED, red LED, buzzer |
 | Tasks | Sensor Acquisition, Control Logic, UART Monitor |
 
-## Run it
+## Run locally (optional)
 
 1. Install [VS Code](https://code.visualstudio.com/), the **Wokwi** extension and Arduino IDE.
 2. Clone the repo and build the firmware:
