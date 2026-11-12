@@ -158,19 +158,6 @@ Generated build files, PlatformIO folders, local libraries, and IDE caches are i
 
 **Tools:** Arduino IDE, Arduino CLI, VS Code, Wokwi, Git, GitHub
 
-## Placement / interview talking points
-
-This project can be discussed as a practical example of:
-
-1. Why separate sensor acquisition, control, and monitoring into RTOS tasks?
-2. Why use a queue instead of having every task read the sensor independently?
-3. Why is the queue length one?
-4. What happens when the DHT22 read fails?
-5. How does task priority affect the control task?
-6. Why is GPIO34 used for the analog input?
-7. What is the difference between a normal reading and an alarm condition?
-8. Why was simulation used before hardware deployment?
-
 ## Demo / Verification
 
 The baseline Wokwi simulation has been run successfully with normal DHT22 values. The serial monitor reports temperature, humidity, ADC process value, and `NORMAL` status while the green status LED remains active.
